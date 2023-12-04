@@ -10,7 +10,7 @@ router.get('/',async (req, res) => {
         const ArrayCategoriasDB = await Categoria.find()
         console.log(ArrayCategoriasDB)
 
-        res.render("Categorias", {
+        res.render("categorias", {
             ArrayCategorias: ArrayCategoriasDB
            
         })
